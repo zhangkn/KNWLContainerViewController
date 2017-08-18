@@ -16,6 +16,8 @@
  
  */
 @property (assign,nonatomic) WLContainerViewControllerType vctype;
+@property (nonatomic,assign) BOOL hasLiked;
+
 
 
 @end
@@ -82,6 +84,11 @@
 
 - (void)reg{
     
+    if (self.hasLiked  == NO) {
+        return;
+    }
+    
+    self.hasLiked = NO;
     self.vctype = !self.vctype;
     
   
@@ -96,7 +103,7 @@
     [self displayContentController:_first];
     self.title = _first.title;
     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]initWithTitle:_second.title style:UIBarButtonItemStylePlain target:self action:@selector(reg)];
-    
+    self.hasLiked = YES;
     
     
 }
@@ -134,7 +141,9 @@
     CGRect endFrame = oldVC.view.bounds;
     endFrame.origin.x -= CGRectGetWidth(self.view.bounds);
     //动画转场
-    [self transitionFromViewController:oldVC toViewController:newVC duration:0.1 options:UIViewAnimationOptionLayoutSubviews animations:^{
+    __weak WLContainerViewController *weakSelf = self;
+
+    [self transitionFromViewController:oldVC toViewController:newVC duration:0.7 options:UIViewAnimationOptionLayoutSubviews animations:^{
         // Animate the views to their final positions.
         newVC.view.frame = oldVC.view.frame;
         oldVC.view.frame = endFrame;
@@ -143,6 +152,7 @@
         // notification to the new view controller.
         [oldVC removeFromParentViewController];
         [newVC didMoveToParentViewController:self];
+        weakSelf.hasLiked = YES;
     }];
 }
 
