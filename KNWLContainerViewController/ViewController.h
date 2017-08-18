@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KNtestViewController1ViewController.h"
+
+#import "KNtestViewController1ViewController2.h"
+
+#import "WLContainerViewController.h"
 
 @interface ViewController : UIViewController
 

@@ -17,6 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+ 
+    
+    
+    
+    
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    WLContainerViewController *vc = [[WLContainerViewController alloc]initWithfirstvc:[[KNtestViewController1ViewController alloc]init] secondvc:[[KNtestViewController1ViewController2 alloc]init]];
+    UINavigationController *nvc = [[UINavigationController alloc]initWithRootViewController:vc];
+    
+    [self presentViewController:nvc animated:YES completion:nil];
 }
 
 

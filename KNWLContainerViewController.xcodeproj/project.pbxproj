@@ -15,6 +15,11 @@
 		E10AE2A71F469C1E0063B809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10AE2A51F469C1E0063B809 /* LaunchScreen.storyboard */; };
 		E10AE2B21F469C1E0063B809 /* KNWLContainerViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E10AE2B11F469C1E0063B809 /* KNWLContainerViewControllerTests.m */; };
 		E10AE2BD1F469C1E0063B809 /* KNWLContainerViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E10AE2BC1F469C1E0063B809 /* KNWLContainerViewControllerUITests.m */; };
+		E10AE2CD1F469D4B0063B809 /* WLContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10AE2CC1F469D4B0063B809 /* WLContainerViewController.m */; };
+		E10AE2D21F469D8C0063B809 /* KNtestViewController1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10AE2D01F469D8C0063B809 /* KNtestViewController1ViewController.m */; };
+		E10AE2D31F469D8C0063B809 /* KNtestViewController1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E10AE2D11F469D8C0063B809 /* KNtestViewController1ViewController.xib */; };
+		E10AE2D71F469DA70063B809 /* KNtestViewController1ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = E10AE2D51F469DA70063B809 /* KNtestViewController1ViewController2.m */; };
+		E10AE2D81F469DA70063B809 /* KNtestViewController1ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E10AE2D61F469DA70063B809 /* KNtestViewController1ViewController2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,14 @@
 		E10AE2B81F469C1E0063B809 /* KNWLContainerViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KNWLContainerViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10AE2BC1F469C1E0063B809 /* KNWLContainerViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNWLContainerViewControllerUITests.m; sourceTree = "<group>"; };
 		E10AE2BE1F469C1E0063B809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10AE2CB1F469D4B0063B809 /* WLContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLContainerViewController.h; sourceTree = "<group>"; };
+		E10AE2CC1F469D4B0063B809 /* WLContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLContainerViewController.m; sourceTree = "<group>"; };
+		E10AE2CF1F469D8C0063B809 /* KNtestViewController1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNtestViewController1ViewController.h; sourceTree = "<group>"; };
+		E10AE2D01F469D8C0063B809 /* KNtestViewController1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNtestViewController1ViewController.m; sourceTree = "<group>"; };
+		E10AE2D11F469D8C0063B809 /* KNtestViewController1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KNtestViewController1ViewController.xib; sourceTree = "<group>"; };
+		E10AE2D41F469DA70063B809 /* KNtestViewController1ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNtestViewController1ViewController2.h; sourceTree = "<group>"; };
+		E10AE2D51F469DA70063B809 /* KNtestViewController1ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNtestViewController1ViewController2.m; sourceTree = "<group>"; };
+		E10AE2D61F469DA70063B809 /* KNtestViewController1ViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KNtestViewController1ViewController2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +114,10 @@
 		E10AE2961F469C1E0063B809 /* KNWLContainerViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E10AE29A1F469C1E0063B809 /* AppDelegate.h */,
-				E10AE29B1F469C1E0063B809 /* AppDelegate.m */,
+				E10AE2CE1F469D6A0063B809 /* test */,
 				E10AE29D1F469C1E0063B809 /* ViewController.h */,
 				E10AE29E1F469C1E0063B809 /* ViewController.m */,
-				E10AE2A01F469C1E0063B809 /* Main.storyboard */,
-				E10AE2A31F469C1E0063B809 /* Assets.xcassets */,
-				E10AE2A51F469C1E0063B809 /* LaunchScreen.storyboard */,
-				E10AE2A81F469C1E0063B809 /* Info.plist */,
+				E10AE2CA1F469D190063B809 /* ContainerViewController */,
 				E10AE2971F469C1E0063B809 /* Supporting Files */,
 			);
 			path = KNWLContainerViewController;
@@ -117,6 +126,12 @@
 		E10AE2971F469C1E0063B809 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E10AE29A1F469C1E0063B809 /* AppDelegate.h */,
+				E10AE29B1F469C1E0063B809 /* AppDelegate.m */,
+				E10AE2A01F469C1E0063B809 /* Main.storyboard */,
+				E10AE2A31F469C1E0063B809 /* Assets.xcassets */,
+				E10AE2A51F469C1E0063B809 /* LaunchScreen.storyboard */,
+				E10AE2A81F469C1E0063B809 /* Info.plist */,
 				E10AE2981F469C1E0063B809 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +153,28 @@
 				E10AE2BE1F469C1E0063B809 /* Info.plist */,
 			);
 			path = KNWLContainerViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		E10AE2CA1F469D190063B809 /* ContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E10AE2CB1F469D4B0063B809 /* WLContainerViewController.h */,
+				E10AE2CC1F469D4B0063B809 /* WLContainerViewController.m */,
+			);
+			name = ContainerViewController;
+			sourceTree = "<group>";
+		};
+		E10AE2CE1F469D6A0063B809 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				E10AE2CF1F469D8C0063B809 /* KNtestViewController1ViewController.h */,
+				E10AE2D41F469DA70063B809 /* KNtestViewController1ViewController2.h */,
+				E10AE2D51F469DA70063B809 /* KNtestViewController1ViewController2.m */,
+				E10AE2D61F469DA70063B809 /* KNtestViewController1ViewController2.xib */,
+				E10AE2D01F469D8C0063B809 /* KNtestViewController1ViewController.m */,
+				E10AE2D11F469D8C0063B809 /* KNtestViewController1ViewController.xib */,
+			);
+			name = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +286,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10AE2D31F469D8C0063B809 /* KNtestViewController1ViewController.xib in Resources */,
+				E10AE2D81F469DA70063B809 /* KNtestViewController1ViewController2.xib in Resources */,
 				E10AE2A71F469C1E0063B809 /* LaunchScreen.storyboard in Resources */,
 				E10AE2A41F469C1E0063B809 /* Assets.xcassets in Resources */,
 				E10AE2A21F469C1E0063B809 /* Main.storyboard in Resources */,
@@ -276,9 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10AE2D21F469D8C0063B809 /* KNtestViewController1ViewController.m in Sources */,
+				E10AE2D71F469DA70063B809 /* KNtestViewController1ViewController2.m in Sources */,
 				E10AE29F1F469C1E0063B809 /* ViewController.m in Sources */,
 				E10AE29C1F469C1E0063B809 /* AppDelegate.m in Sources */,
 				E10AE2991F469C1E0063B809 /* main.m in Sources */,
+				E10AE2CD1F469D4B0063B809 /* WLContainerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +558,7 @@
 				E10AE2C31F469C1E0063B809 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E10AE2C41F469C1E0063B809 /* Build configuration list for PBXNativeTarget "KNWLContainerViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +567,7 @@
 				E10AE2C61F469C1E0063B809 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E10AE2C71F469C1E0063B809 /* Build configuration list for PBXNativeTarget "KNWLContainerViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +576,7 @@
 				E10AE2C91F469C1E0063B809 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
