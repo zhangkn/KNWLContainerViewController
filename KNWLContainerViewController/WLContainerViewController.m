@@ -116,6 +116,8 @@
     //The removeFromParentViewController method also calls the child’s didMoveToParentViewController: method, passing that method a value of nil.
     [content removeFromParentViewController];
 }
+#pragma mark --      [self transitionFromViewController:oldVC toViewController:newVC duration:0.1 options:UIViewAnimationOptionLayoutSubviews animations:^{//报错原因  用户点击的时间间隔《 动画持续时间， 因此动画持续时间可以设置小一点，例如0.1
+
 
 - (void)cycleFromViewController: (UIViewController*) oldVC
                toViewController: (UIViewController*) newVC {
@@ -132,7 +134,7 @@
     CGRect endFrame = oldVC.view.bounds;
     endFrame.origin.x -= CGRectGetWidth(self.view.bounds);
     //动画转场
-    [self transitionFromViewController:oldVC toViewController:newVC duration:0.5 options:UIViewAnimationOptionLayoutSubviews animations:^{
+    [self transitionFromViewController:oldVC toViewController:newVC duration:0.1 options:UIViewAnimationOptionLayoutSubviews animations:^{
         // Animate the views to their final positions.
         newVC.view.frame = oldVC.view.frame;
         oldVC.view.frame = endFrame;
